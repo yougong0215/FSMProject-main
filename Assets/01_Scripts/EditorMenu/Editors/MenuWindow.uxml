@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+    <Style src = "MenuWindow.uss"/>
+    <engine:Box name="container">
+     <engine:Box name= "image-box">
+         <engine:Image class="img" name= "targetimage"/>
+    </engine:Box>
+    <engine:Box name= "menu-box">
+         <engine:Button text="테스트버튼1" name = "testBtn1"/>
+         <engine:Button text="테스트버튼2" name = "testBtn2"/>
+         <engine:Button text="테스트버튼3" name = "testBtn3"/>
+     </engine:Box>  
+     </engine:Box>  
+</engine:UXML>

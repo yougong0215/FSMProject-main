@@ -1,0 +1,39 @@
+VisualElement {}
+
+Button
+{
+	font-size:15px;
+	height:45px;
+}
+
+Button:hover{
+	background-color:#f00; /* rgb => ff0000 */
+}
+
+#container
+{
+	display:flex;
+	flex-direction:row;
+	
+}
+
+#menu-box
+{
+	flex:1;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-direction:column;
+	height:100%
+}
+#image-box{
+	flex:3;
+	height:300px;
+}
+
+#image-box > .img
+{
+	--unity-image: url(/Assets/04_Sprites/enemy.png);
+	width:100%;
+	height:100%;
+}

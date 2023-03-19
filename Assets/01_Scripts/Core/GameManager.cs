@@ -23,5 +23,44 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         MapManager.Instance = new MapManager(_mapTrm);
+
+        SaveManager.Instance = new SaveManager();
     }
+
+    #region 技捞宏 包府 康开
+
+    [SerializeField]
+    private List<string> _achievements;
+    [SerializeField]
+    private string _name;
+    [SerializeField]
+    private int _maxScore;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaveData data = new SaveData
+            { 
+                Achievements = _achievements,
+                MaxSccore = _maxScore,
+                Name = _name
+            };
+            SaveManager.Instance.Save(data);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SaveData data = SaveManager.Instance.Load();
+
+            if(data != null)
+            {
+                _achievements = data.Achievements;
+                _maxScore = data.MaxSccore;
+                _name = data.Name;
+            }
+        }
+    }
+
+    #endregion
+
 }

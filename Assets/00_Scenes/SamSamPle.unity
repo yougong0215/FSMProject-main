@@ -4364,13 +4364,9 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 125
     m_Data: {fileID: 11400000, guid: d036d1d6dff8dc344b56753ad4ad5806, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 125
     m_Data: {fileID: 931367507677807349, guid: 99462c9a2df80dd4fb3ea48f86ff24c5, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 125
     m_Data:
@@ -8833,6 +8829,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mapTrm: {fileID: 537343340}
+  _achievements:
+  - "\uC640 \uC0CC\uC988"
+  - "\uC544\uC2DC\uB294\uAD6C\uB098"
+  - "\uC815\uB9D0 \uC5B4\uB835\uC2B5\uB2C8\uB2E4"
+  _name: "\uC720\uACE7"
+  _maxScore: 99099
 --- !u!4 &891370124
 Transform:
   m_ObjectHideFlags: 0
@@ -8923,6 +8925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313cab40af509324fa51712177a24443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  One: 0
 --- !u!1 &1018755580
 GameObject:
   m_ObjectHideFlags: 0
@@ -9121,6 +9124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40840285d97c98e4ab358490cded10df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  One: 0
 --- !u!1 &1519902018
 GameObject:
   m_ObjectHideFlags: 0
@@ -9186,6 +9190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeca6f6124f75404397bc045847c1336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  One: 0
 --- !u!1 &1584665222
 GameObject:
   m_ObjectHideFlags: 0
@@ -9457,6 +9462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9870f6e53e9c0b43a8d97feed4ef24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  One: 0
 --- !u!1 &1695125242
 GameObject:
   m_ObjectHideFlags: 0
